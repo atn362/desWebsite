@@ -12,11 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Norton Floors</title>
 </head>
 
-<body>
 
+<body>
     <div class="header">
         <div class="inner_header">
             <div class="logo_container">
@@ -34,8 +38,30 @@
                     <li>Services</li>
                 </a>
                 <a>
-                    <li>Contact</li>
+                    <li type="button" data-toggle="modal" data-target="#myModal">Contact
+                    </li>
                 </a>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Contact now to schedule an estimate</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3><a href="tel:9522708875">Call Now</a></h3>
+                                <h3><a href="mailto:nortonfloors@hotmail.com">Send an Email</a></h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </ul>
         </div>
     </div>
@@ -57,6 +83,7 @@
         <img src="https://cdn.flooringstores.com/cloudinary/image/upload/w_2000,f_auto,q_auto/v1/media_store/www/geolocationpage/18e38879-5f37-4f9f-86b4-12eaf651ba44/header_image/6f71cad7d21c993b05d7aeec532373af.jpg"
             class="img-fluid" alt="Responsive image">
     </div>
+
 
 
 

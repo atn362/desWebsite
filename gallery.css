@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
 }
@@ -69,6 +73,11 @@ body {
     right: 1rem;
 }
 
+
+.modal-body {
+    display: flex;
+    gap: 25px;
+}
 
 
 
