@@ -96,3 +96,15 @@
     display: flex;
     gap: 25px;
 }
+
+.service-cards {
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-img-top {
+    height: 160px;
+    width: 280px;;
+}
