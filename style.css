@@ -97,12 +97,14 @@
     gap: 25px;
 }
 
-.service-cards {
-    height: 40vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+.container {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 50px;
+  }
 
 .card-img-top {
     height: 160px;
