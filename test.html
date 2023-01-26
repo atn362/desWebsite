@@ -1,44 +1,59 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./gallery.css">
-    <script src="./script.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
 
-
-    <title>Document</title>
+    <title>Navigation bar</title>
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1>Norton<span>Floors</span></h1>
-
-            </div>
-
-
-            <ul class="navigation">
-                <a href="https://atn362.github.io/dadWebsite/">
-                    <li>Home</li>
+    <header>
+        <div id="brand"><a href="https://atn362.github.io/dadWebsite/">Norton Floors</a></div>
+        <nav>
+            <ul>
+                <li><a href="https://atn362.github.io/dadWebsite/">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <a>
+                    <li type="button" data-toggle="modal" data-target="#myModal">Contact
+                    </li>
                 </a>
-                <a href="./services.html">
-                    <li>Services</li>
-                </a>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Contact now to schedule an estimate</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3><a style="color: black;" href="tel:7635555555">Call: 763-555-5555</a></h3>
+                                <h3><a style="color: black;" href="mailto:nortonfloors@hotmail.com">Email:
+                                        nortonfloors@hotmail.com</a></h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="https://atn362.github.io/dadWebsite/">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./services.html">Services</a></li>
                 <a>
                     <li type="button" data-toggle="modal" data-target="#myModal">Contact
                     </li>
@@ -65,9 +80,8 @@
                 </div>
             </ul>
         </div>
-    </div>
-
-
+    </header>
+    <script src="index.js"></script>
 </body>
 
 </html>
