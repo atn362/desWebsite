@@ -16,11 +16,11 @@ header a {
   text-decoration: none;
 }
 
-.modal-title{
+.modal-header > h4{
   color: black;
 }
 
-.modal-contact {
+.modal-body > h3 {
   color: black;
 }
 
@@ -65,28 +65,6 @@ ul li:hover {
   transition: 0.3s;
 }
 
-#login,
-#signup {
-  border-radius: 5px;
-  padding: 5px 8px;
-}
-
-#login {
-  border: 1px solid #498afb;
-}
-
-#signup {
-  border: 1px solid #ff3860;
-}
-
-#signup a {
-  color: #ff3860;
-}
-
-#login a {
-  color: #498afb;
-}
-
 #hamburger-icon {
   margin: auto 0;
   display: none;
@@ -118,7 +96,7 @@ ul li:hover {
 .open .mobile-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -134,6 +112,7 @@ ul li:hover {
 .mobile-menu li {
   margin-bottom: 10px;
 }
+
 
 @media only screen and (max-width: 600px) {
   header nav {
