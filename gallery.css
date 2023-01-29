@@ -26,6 +26,7 @@ body {
     position: absolute;
     inset: 0;
     opacity: 0;
+    margin-top: 45px;
 }
 
 .slide > img {
