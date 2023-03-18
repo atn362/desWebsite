@@ -170,6 +170,12 @@ body {
     margin-bottom: 15px;
 }
 
+.image_container_map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 figcaption {
     background-color: black;
     color: white;
